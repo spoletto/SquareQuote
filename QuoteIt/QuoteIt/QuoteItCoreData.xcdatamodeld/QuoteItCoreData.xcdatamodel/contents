@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="11D50b" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="QIQuote" representedClassName="QIQuote" syncable="YES">
+        <attribute name="created" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="photoURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quoteID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="viewCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="source" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="QIUser" inverseName="quotesSourced" inverseEntity="QIUser" syncable="YES"/>
+        <relationship name="submittedUser" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="QIUser" inverseName="quotesSubmitted" inverseEntity="QIUser" syncable="YES"/>
+    </entity>
+    <entity name="QIUser" representedClassName="QIUser" syncable="YES">
+        <attribute name="fbID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="friends" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="QIUser" inverseName="friends" inverseEntity="QIUser" syncable="YES"/>
+        <relationship name="quotesSourced" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="QIQuote" inverseName="source" inverseEntity="QIQuote" syncable="YES"/>
+        <relationship name="quotesSubmitted" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="QIQuote" inverseName="submittedUser" inverseEntity="QIQuote" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="QIQuote" positionX="-2781" positionY="-3648" width="128" height="150"/>
+        <element name="QIUser" positionX="-3006" positionY="-3678" width="128" height="195"/>
+    </elements>
+</model>
