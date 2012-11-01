@@ -1363,6 +1363,7 @@
 		9C550B4B14AD0027001C6689 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9C550BA214AD1559001C6689 /* QuoteItCoreData.xcdatamodeld */,
 				9C550B4C14AD0027001C6689 /* QuoteIt-Info.plist */,
 				9C550B4D14AD0027001C6689 /* InfoPlist.strings */,
 				9C550B5014AD0027001C6689 /* main.m */,
@@ -1414,7 +1415,6 @@
 				9C550D7914AEB24D001C6689 /* 37x-Checkmark.png */,
 				9CE0365514F23D5B0007AA3D /* Icon@2x.png */,
 				9CE0365614F23D5B0007AA3D /* Icon.png */,
-				9C550BA214AD1559001C6689 /* QuoteItCoreData.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -2948,6 +2948,7 @@
 				GCC_PREFIX_HEADER = "QuoteIt/QuoteIt-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
 				INFOPLIST_FILE = "QuoteIt/QuoteIt-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/TestFlightSDK1.0\"",
@@ -2982,6 +2983,7 @@
 				GCC_PREFIX_HEADER = "QuoteIt/QuoteIt-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
 				INFOPLIST_FILE = "QuoteIt/QuoteIt-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/TestFlightSDK1.0\"",
@@ -2992,7 +2994,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = SquareQuote;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AD459CD0-8F88-45CD-9814-37BD5B46EC44";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3E450581-96C1-4128-838A-3C3FC31CF63E";
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -3041,6 +3043,7 @@
 				GCC_PREFIX_HEADER = "QuoteIt/QuoteIt-Prefix.pch";
 				HEADER_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}";
 				INFOPLIST_FILE = "QuoteIt/QuoteIt-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/TestFlightSDK1.0\"",
@@ -3089,7 +3092,8 @@
 				9C550BA314AD1559001C6689 /* QuoteItCoreData.xcdatamodel */,
 			);
 			currentVersion = 9C550BA314AD1559001C6689 /* QuoteItCoreData.xcdatamodel */;
-			path = QuoteItCoreData.xcdatamodeld;
+			name = QuoteItCoreData.xcdatamodeld;
+			path = Resources/QuoteItCoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
